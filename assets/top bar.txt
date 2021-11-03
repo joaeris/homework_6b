@@ -1,0 +1,25 @@
+ <div class="topNav">
+                <ul class="searchandmore">
+                    <li class="search">
+                            <input type="text" name="search" placeholder="search...">
+                            <button class="search"> go</button>
+                    </li>
+                    <li class="open">
+                        <a href="https://goo.gl/maps/iMxf4PQ9dGNswwob9">
+                            <img src="open.png" id="open" alt="Squirell Hill location is open for customers" >
+                        </a>
+                    </li>
+                    <li class="rewards">
+                        <img src="rewards star.png" id="star" alt="Click this star to gain rewards with Fluff Stuff">
+                        <span>rewards</span>
+                    </li>
+                    <li class="user">
+                        <img src="user.png" id="user" alt="Login to your account">
+                        <span>account</span>
+                    </li>
+                    <li class="cart">
+                        <img src="cart.png" id="cart" alt="Click here to checkout">
+                        <span>checkout</span>
+                    </li>
+                </ul>
+            </div>  
