@@ -23,6 +23,20 @@ body {
 /* Style of the search bar*/
 
 
+.searchwrapper{
+    position: relative;
+}
+
+.searchwrapper img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.searchbar{
+    padding: 5px;
+}
+
 
 
 .logoOverall {
