@@ -19,88 +19,30 @@ function submit() {
   var quantity = select.numbers
 }
 
-
-var cart = null;
-var Item = function (name, fill, color, count) {
-  this.name = name
-  this.fill = fill
-  this.color = color
-  this.count = count
-};
-
-
-// add an item to the cart
-
-function addItemToCart(name, fill, color, count) {
-  //retrieve form localstorage
-  // let cart = JSON.parse(localstorage.getItem('savedCart'));
-
-
-  if (cart === null) {
-    var item = new Item(name, fill, color, count);
-    cart = [item]
-  }
-
-  var alreadyInCart = false;
-
-  for (var i in cart) {
-    if (cart[i].name === name && cart[i].color === color && cart[i].fill === fill) {
-      cart[i].count += count;
-      alreadyInCart = true;
-      break;
-    }
-  }
-
-  if (!alreadyInCart) {
-    var item = new Item(name, fill, color, count);
-    cart.push(item)
-  }
-
-
-  // updating localstorage
-  // localstorage.setItem('savedCart', JSON.stringify(cart));
-
+var addToCart = document.getElementById('submitButton')
+for (var i = 0; i < addToCart.length, i++) {
+  var button = addToCart[i]
+  button.addeventlistener('click', addToCartClick)
 }
 
-// remove an item from the cart
-function removeItemFromCart(name) {
-  for (var i in cart) {
-    if (cart[i].name === name) {
-      cart[i].count--;
-      if (cart[i].count === 0) {
-        cart.splice(i, 1);
-      }
-      break;
-    }
-  }
+function addToCartClick(event) {
+  var button = event.target
+  var item = button.parentElement.parentElement
+  var name = item.getElementbyClassName('name')[0].innerText
+  var fill = item.getElementbyClassName('fill')[0].innerText
+  var price = item.getElementbyClassName('amount')[0].innerText
+  var imgSrc = item.getElementbyClassName('roundpillow')[0].src
+  itemsInCart(name, fill, price, imgSrc)
 }
 
-// remove the whole item from the cart
-function removeItemFromCartWhole(name) {
-  for (var i in cart) {
-    if (cart[i].name === name) {
-      cart.splice(i, 1);
-      break;
-    }
-  }
+function addItemToCart(name, fill, price, imgSrc) {
+  var newCart = document.createElement('div')
+  var cartItems = document.getElementsByClassName('shipping')[0]
+  cartItems.append(newCart)
 }
 
-//clearing the entire cart to start over
-function clearCartAll() {
-  cart = [];
-}
 
-clearCartAll();
-console.log(cart)
-
-
-//this will find the subtotal
-function subtotal() {
-  var totalCost = 0;
-  for (var i in cart) {
-    totalCost += cart[i].price;
-  }
-  return subtotal;
-}
-
-console.log(subtotal());
+//quantity = ""
+//document.getElementById("submit").addEventListener("click", function ()) {
+//document.getElementById("quantity").innerHTML = "";
+//}

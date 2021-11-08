@@ -1,6 +1,6 @@
 body {
     background-color: white;
-  }
+}
 
 /* Top bar styling */
 .favorites_bar {
@@ -14,26 +14,72 @@ body {
     float: left;
 }
 
-/* This styling is for the items on the right (rewards, account, checkout) */
-.personalInfo{
-    justify-content: rtl;
-    float: right;
+.openSign {
+    font-family: Sulphur Point;
+    color: green;
 }
+
+.buttonOpen {
+    font-family: Sulphur Point;
+}
+
+.buttonOpen {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: white;
+    border: none;
+}
+
+
+/* This styling is for the items on the right (rewards, account, checkout) */
+.personalInfo {
+    float: right;
+    text-decoration: none;
+}
+
+.rewards {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.account {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkout {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    align-items: center;
+    display: inline-flex;
+    align-items: center;
+}
+
 
 /* Style of the search bar*/
 
 
-.searchwrapper{
+.searchwrapper {
     position: relative;
 }
 
-.searchwrapper img{
+.searchwrapper img {
     position: absolute;
     top: 0px;
     left: 0px;
 }
 
-.searchbar{
+.searchbar {
     padding: 5px;
 }
 
@@ -47,9 +93,9 @@ body {
 
 nav {
     background-color: #ADADAD;
-    position:relative;
+    position: relative;
     height: 30px;
-    z-index:11;
+    z-index: 11;
 }
 
 nav ul {
@@ -69,33 +115,33 @@ nav ul li {
 
 li a {
     color: white;
-    font-family:Sulphur Point;
+    font-family: Sulphur Point;
     text-decoration: none;
-    font-style:normal;
-    font-weight:400;
-    font-size:12px;
-    letter-spacing:0.55px;
-    line-height:30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.55px;
+    line-height: 30px;
     display: block;
 }
 
-li a:hover{
+li a:hover {
     background-color: beige;
     color: black;
 }
 
-.topBanner{
+.topBanner {
     display: inline;
 }
 
 /* Link text decor. none */
 
-a:link{
-    text-decoration: none!important;
+a:link {
+    text-decoration: none !important;
 }
 
 /* These are the three buttons on the site */
-.servicesButtons{
+.servicesButtons {
     column-count: 3;
     column-gap: 160px;
     float: left;
@@ -103,26 +149,27 @@ a:link{
     margin-left: 50px;
     margin-bottom: 20px;
     display: inline;
-    font-family:Sulphur Point;
-    font-style:normal;
-    font-weight:400;
+    font-family: Sulphur Point;
+    font-style: normal;
+    font-weight: 400;
     color: black;
     position: relative;
     display: flex;
     vertical-align: middle;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 /* The buttons needed these next three styles otherwise they would be blue.  */
-.servicesButtons a:visited{
+.servicesButtons a:visited {
     color: black;
 }
 
-.servicesButtons a:link{
+.servicesButtons a:link {
     color: black;
 }
 
-.servicesButtons a:active{
+.servicesButtons a:active {
     color: black;
 }
 
@@ -130,7 +177,7 @@ a:link{
     background-color: #F29991;
     display: inline;
     vertical-align: middle;
-    text-align: center; 
+    text-align: center;
     border-color: #F29991;
     width: 270px;
     height: 40px;
@@ -139,7 +186,7 @@ a:link{
 .button2 {
     background-color: #E29E6E;
     display: inline-block;
-    text-align: center; 
+    text-align: center;
     border-color: #E29E6E;
     width: 270px;
     height: 40px;
@@ -148,7 +195,7 @@ a:link{
 .button3 {
     background-color: #427FA4;
     display: inline-block;
-    text-align: center; 
+    text-align: center;
     border-color: #427FA4;
     width: 270px;
     height: 40px;
@@ -167,9 +214,9 @@ a:link{
     top: 40%;
     left: 10%;
     font-family: Noto Serif;
-    font-size:24px;
-    font-weight:400;
-  }
+    font-size: 24px;
+    font-weight: 400;
+}
 
 .top-leftunder {
     position: absolute;
@@ -177,9 +224,9 @@ a:link{
     left: 12%;
     font-family: Source Code Pro;
     margin-top: 5px;
-    font-size:18px;
-    font-weight:400;
-  }
+    font-size: 18px;
+    font-weight: 400;
+}
 
 .top-leftunderthat {
     position: absolute;
@@ -187,31 +234,34 @@ a:link{
     left: 15%;
     font-family: Source Code Pro;
     margin-top: 10px;
-    font-size:14px;
-    font-weight:400;
-  }
+    font-size: 14px;
+    font-weight: 400;
+}
+
 /* For some reason, there was no ability to add a class unless I kept the pattern of top-left... going*/
-  .top-leftunderthatorder {
+.top-leftunderthatorder {
     position: absolute;
     top: 55%;
-    left:21%;
+    left: 21%;
     font-family: Source Code Pro;
     margin-top: 10px;
-    font-size:18px;
-    font-weight:400;
+    font-size: 18px;
+    font-weight: 400;
     color: white;
     display: block;
     box-shadow: none;
     color: inherit;
-  }
+}
 
-.top-leftunderthatorder a:visited{
+.top-leftunderthatorder a:visited {
     color: white;
 }
-.top-leftunderthatorder a:hover{
+
+.top-leftunderthatorder a:hover {
     color: brown;
 }
-.top-leftunderthatorder a:active{
+
+.top-leftunderthatorder a:active {
     color: white;
 }
 
@@ -227,13 +277,14 @@ p {
     float: right;
     margin-right: 100px;
     margin-top: 10px;
-    font-family:Sulphur Point;
-    font-style:normal;
-    font-weight:400;
+    font-family: Sulphur Point;
+    font-style: normal;
+    font-weight: 400;
     text-align: right;
-    font-size:18px;  
+    font-size: 18px;
 
 }
+
 /* This is set up to hover but is waiting for the js behind it */
 .container {
     column-count: 4;
@@ -246,13 +297,13 @@ p {
     margin-bottom: 50px;
 }
 
-.des-container{
+.des-container {
     width: 50%;
     float: right;
-    font-family:Sulphur Point;
+    font-family: Sulphur Point;
 }
 
-.round-container{
+.round-container {
     width: 50%;
     float: left;
 }
@@ -262,70 +313,74 @@ p {
     margin-left: 50px;
 }
 
-.options-container{
+.options-container {
     margin-left: 50px;
     margin-right: 100px;
 }
 
-.fill{
+.fill {
     float: left;
 }
 
-.color{
+#myList {
+    padding: 10px;
+}
+
+.color {
     float: left;
 }
 
-.quantity{
+.quantity {
     float: left;
 }
 
-.submit{
+.changenumb {
+    padding: 10px;
+}
+
+.submit {
     float: right;
     margin-top: 35%;
 }
 
-.fill{
-    margin: 4px 2px;
+.buttonColor {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Sulphur Point;
+    font-size: 12px;
+    margin: 2px 2px;
+    border: none;
+    background-color: #96471A;
 }
 
-.buttonColor{
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  font-family:Sulphur Point;
-  font-size: 12px;
-  margin: 2px 2px;
-  border: none;
-  background-color: #96471A;
-}
-
-.buttonColor:hover{
+.buttonColor:hover {
     background-color: black;
 
 }
 
-.buttonSubmit{
-  color: white;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  font-family:Sulphur Point;
-  font-size: 16px;
-  margin: 2px 2px;
-  background-color: black;
-  border: none;
+.buttonSubmit {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Sulphur Point;
+    font-size: 16px;
+    margin: 2px 2px;
+    background-color: black;
+    border: none;
 }
 
-.buttonSubmit:hover{
+.buttonSubmit:hover {
     background-color: #96471A;
-  }
+}
 
-#orderHere{
+#orderHere {
     margin: 50px 10px 10px;
 }
 
@@ -335,37 +390,37 @@ h1 {
     float: right;
     margin: 50px;
     margin-right: 100px;
-    font-family:Sulphur Point;
-    font-style:normal;
-    font-weight:400;
+    font-family: Sulphur Point;
+    font-style: normal;
+    font-weight: 400;
     text-align: center;
-    font-size:48px;  
+    font-size: 48px;
 }
 
 h2 {
     color: black;
-    font-family:Sulphur Point;
+    font-family: Sulphur Point;
     text-decoration: none;
-    font-style:normal;
-    font-weight:400;
-    font-size:20px;  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 h3 {
     color: black;
-    font-family:Sulphur Point;
+    font-family: Sulphur Point;
     text-decoration: none;
-    font-style:normal;
-    font-weight:400;
-    font-size:20px;  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 h4 {
-    font-family:Sulphur Point;
-    font-style:normal;
-    font-weight:400;
+    font-family: Sulphur Point;
+    font-style: normal;
+    font-weight: 400;
     text-align: center;
-    font-size:34px;  
+    font-size: 34px;
 }
 
 #shopping {
@@ -385,24 +440,24 @@ h4 {
     font-weight: normal;
 }
 
-#cartImage{
+#cartImage {
     float: left;
 }
 
-#shippingText{
+#shippingText {
     margin-left: 200px;
     width: 80%;
 }
 
 
 
-.settings{
+.settings {
     position: absolute;
     margin: 150px;
     margin-left: 60%;
-    font-family:Sulphur Point;
-    font-style:normal;
-    font-weight:400;
+    font-family: Sulphur Point;
+    font-style: normal;
+    font-weight: 400;
     text-align: center;
-    font-size:48px;  
+    font-size: 48px;
 }

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <!-- Head is formatted to include new fonts from Google and to include other sheets-->
+
+<head>
+    <!-- Head is formatted to include new fonts from Google and to include other sheets-->
     <meta charset="utf-8" />
     <meta name="author" content="Joanne Aire-O.">
     <title>Fluff Stuff</title>
@@ -10,113 +11,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="entirePage">
-            <!-- First bar at the top is a nav bar with spans. It includes search, check account, etc  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
 
-            <div class="favorites_bar">
-                <span> 
-                    <!-- Span class for search bar and open sign  -->
-                    <span class="searchOpen">
+<body>
+    <div class="entirePage">
+        <!-- First bar at the top is a nav bar with spans. It includes search, check account, etc  -->
+
+        <div class="favorites_bar">
+            <span>
+                <!-- Span class for search bar and open sign  -->
+                <span class="searchOpen">
                     <!-- Button for search  -->
 
                     <!-- Created a wrapper for the searchbar  -->
-                        <span class= "searchwrapper">
-                            <img src= "assets/searchicon.png" id="searchIcon" width= 32px height= 40px alt="Search Icon">
-                            <input class= "searchbar" type="text" placeholder="Search"> 
-                        </span>
-                        <button class="buttonOpen" alt="Squirell Hill Location Open/Close">
-                            <span>squirell hill your store:  </span>
-                            <!-- Squirell Hill Location will show open  -->
-                            <!-- Open sign will be green  --> 
-                            <span class="openSign"> Open </span>
-                        </button>
-                      </span>
-                    
-                    <!-- These are buttons that people would click so that they know what Info is there  --> 
-                    <span class="personalInfo">
-                    <!-- Button for rewards -->
-                        <button class="rewards" alt="Click here for rewards">
-                            <!-- Image is from icons8 plugin on Figma -->
-                            <img src= "assets/rewardsStar.png" id="rewardsStar"width= 32px height= 40px alt="Rewards Star Icon">
-                            <span class="rewards">rewards</span>
-                        </button>
-                        <!-- Button for user/account -->
-                        <!-- Image is from icons8 plugin on Figma -->
-                        <button class="account" alt="Click here for account details">
-                            <img src= "assets/user.png" id="user" width= 42px height= 50px alt="User icon">
-                            <span class="user">user</span>
-                        </button>
-                         <!-- Button for checkout -->
-                         <!-- Image is from icons8 plugin on Figma -->
-                            <button class="checkout" alt="Click here for the checkout cart">
-                                <img src= "assets/cart.png" id="user" width= 37px height= 45px alt="Checkout icon">
-                                <span class="checkout">checkout</span>
-                            </button>
+                    <span class="searchwrapper">
+                        <img src="assets/searchicon.png" id="searchIcon" width=10px height=10px alt="Search Icon">
+                        <input class="searchbar" type="text" placeholder="Search">
                     </span>
+                    <button class="buttonOpen" alt="Squirell Hill Location Open/Close">
+                        <span>squirell hill your store: </span>
+                        <!-- Squirell Hill Location will show open  -->
+                        <!-- Open sign will be green  -->
+                        <span class="openSign"> Open </span>
+                    </button>
                 </span>
-            </div>
+
+                <!-- These are buttons that people would click so that they know what Info is there  -->
+                <span class="personalInfo">
+                    <!-- Button for rewards -->
+                    <button class="rewards" alt="Click here for rewards">
+                        <!-- Image is from icons8 plugin on Figma -->
+                        <img src="assets/rewardsStar.png" id="rewardsStar" width=32px height=40px
+                            alt="Rewards Star Icon">
+                        <span class="rewards">rewards</span>
+                    </button>
+                    <!-- Button for user/account -->
+                    <!-- Image is from icons8 plugin on Figma -->
+                    <button class="account" alt="Click here for account details">
+                        <img src="assets/user.png" id="user" width=42px height=50px alt="User icon">
+                        <span class="user">user</span>
+                    </button>
+                    <!-- Button for checkout -->
+                    <!-- Image is from icons8 plugin on Figma -->
+                    <button class="checkout" alt="Click here for the checkout cart">
+                        <a href="cart.html">
+                            <img src="assets/cart.png" id="user" width=37px height=45px alt="Checkout icon">
+                            <span class="checkoutword">checkout</span>
+                        </a>
+                    </button>
+                </span>
+            </span>
         </div>
+    </div>
 
 
-            <div class="logoOverall">
-                <a href="index.html"><img src="assets/main logo.png"  id="logo" width="300" height= "80" alt="Welcome to Fluff Stuff. Established in 1996"></a>
-            </div>
-            <nav id="nav-container" class="menuBar" role="main">
-                <ul class="menu-navigation">
-                    <li class="newArrivals">
-                        <a href="#">
-                            <span>new arrivals</span>
-                        </a>
-                    </li>
-                    <li class="products">
-                        <a href="products.html">
-                            <span>products</span>
-                        </a>
-                    </li>
-                    <li class="about">
-                        <a href="#">
-                            <span>about</span>
-                        </a>
-                    </li>
-                    <li class="contactus">
-                        <a href="#">
-                            <span>contact us</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="servicesButtons">
-                <button class="button1" alt="Earn 20% back in rewards today">
-                    <span>Earn 20% back in rewards today</span> 
-                </button>
-                
-                <button class="button2" alt="Check your balance">
-                    <span>Check your balance</span>
-                </button>
+    <div class="logoOverall">
+        <a href="index.html"><img src="assets/main logo.png" id="logo" width="300" height="80"
+                alt="Welcome to Fluff Stuff. Established in 1996"></a>
+    </div>
+    <nav id="nav-container" class="menuBar" role="main">
+        <ul class="menu-navigation">
+            <li class="newArrivals">
+                <a href="#">
+                    <span>new arrivals</span>
+                </a>
+            </li>
+            <li class="products">
+                <a href="products.html">
+                    <span>products</span>
+                </a>
+            </li>
+            <li class="about">
+                <a href="#">
+                    <span>about</span>
+                </a>
+            </li>
+            <li class="contactus">
+                <a href="#">
+                    <span>contact us</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="servicesButtons">
+        <button class="button1" alt="Earn 20% back in rewards today">
+            <span>Earn 20% back in rewards today</span>
+        </button>
 
-                <button class="button3" alt="Learn more!">
-                    <span>Learn more!</span>
-                </button>
+        <button class="button2" alt="Check your balance">
+            <span>Check your balance</span>
+        </button>
 
-            </div>
-            <!-- This photo is from pexels.com -->
-            <div class="pillow">
-                <img src="assets/pillow.png" id="handonpillow" width= "100%" max-height= "100vh" alt="Come enjoy the nice pillows">
-                <div class="top-left">OUR SOFTEST PILLOW LINE YET</div>
-                <div class="top-leftunder">Create pillows that you love.</div>
-                <div class="top-leftunderthat">Delivered to your front door.</div>
-                <div class="top-leftunderthatorder">
-                    <a href="round pillow.html">
-                        <span>Order Now</span>
-                        <!-- There are several points at which I tried to change the color of this but nonetheless, it did not work -->
-                    </a>
-                </div>
-            </div>
+        <button class="button3" alt="Learn more!">
+            <span>Learn more!</span>
+        </button>
 
-        </div> 
+    </div>
+    <!-- This photo is from pexels.com -->
+    <div class="pillow">
+        <img src="assets/pillow.png" id="handonpillow" width="100%" max-height="100vh"
+            alt="Come enjoy the nice pillows">
+        <div class="top-left">OUR SOFTEST PILLOW LINE YET</div>
+        <div class="top-leftunder">Create pillows that you love.</div>
+        <div class="top-leftunderthat">Delivered to your front door.</div>
+        <div class="top-leftunderthatorder">
+            <a href="round pillow.html">
+                <span>Order Now</span>
+                <!-- There are several points at which I tried to change the color of this but nonetheless, it did not work -->
+            </a>
+        </div>
+    </div>
 
-    </body>
+    </div>
+
+</body>
