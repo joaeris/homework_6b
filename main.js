@@ -37,7 +37,7 @@ function addItemToCart(name, fill, color, count) {
 
 
   if (cart === null) {
-    var item = new Item(name, fill, color);
+    var item = new Item(name, fill, color, count);
     cart = [item]
   }
 
@@ -63,4 +63,44 @@ function addItemToCart(name, fill, color, count) {
 }
 
 // remove an item from the cart
-function re
+function removeItemFromCart(name) {
+  for (var i in cart) {
+    if (cart[i].name === name) {
+      cart[i].count--;
+      if (cart[i].count === 0) {
+        cart.splice(i, 1);
+      }
+      break;
+    }
+  }
+}
+
+// remove the whole item from the cart
+function removeItemFromCartWhole(name) {
+  for (var i in cart) {
+    if (cart[i].name === name) {
+      cart.splice(i, 1);
+      break;
+    }
+  }
+}
+
+//clearing the entire cart to start over
+function clearCartAll() {
+  cart = [];
+}
+
+clearCartAll();
+console.log(cart)
+
+
+//this will find the subtotal
+function subtotal() {
+  var totalCost = 0;
+  for (var i in cart) {
+    totalCost += cart[i].price;
+  }
+  return subtotal;
+}
+
+console.log(subtotal());
